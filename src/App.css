@@ -1,0 +1,175 @@
+@import url("https://fonts.googleapis.com/css2?family=Comfortaa&display=swap");
+
+:root {
+  --color-white: #f3f3f3;
+  --color-darkblue: #1b1b32;
+  --color-darkblue-alpha: #2d516ecc;
+  --color-lightblue: #52a0d3d9;
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+/* Firefox */
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 16px;
+  font-family: "Comfortaa", cursive;
+  vertical-align: baseline;
+}
+
+*:focus {
+  outline: none;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  background: linear-gradient(
+    47.22deg,
+    #6e6cd8 5.72%,
+    #40a0ef 48.21%,
+    #77e1ee 94.27%
+  );
+}
+
+header h1 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: var(--color-white);
+  text-align: center;
+  margin-top: 2rem;
+  margin-bottom: 3rem;
+}
+
+main h2 {
+  color: #333;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+div.App main {
+  width: 1200px;
+  margin: auto;
+}
+
+div.App form {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, 0.8fr) 1.4fr;
+  grid-column-gap: 2rem;
+}
+
+div.App fieldset {
+  position: relative;
+  min-width: 300px;
+  padding: 1.5rem;
+  background: rgb(234, 231, 255);
+  border-radius: 0.5rem;
+  box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+  transition: 0.3s;
+}
+
+div.App fieldset:hover {
+  transform: scale(1.05);
+}
+
+.inputNumber {
+  padding: 0.3rem 0.5rem;
+  border-radius: 4px;
+}
+
+fieldset .legend {
+  font-size: 1rem;
+  border: 2px solid rgb(129, 93, 185);
+  color: rgb(129, 93, 185);
+  background: rgb(255, 255, 255);
+  padding: 0.3rem 0.6rem;
+  border-radius: 0.5rem;
+}
+
+div.situationField {
+  height: 100%;
+}
+
+div.baremeContainer {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+div.radioContainer {
+  display: flex;
+  width: 50%;
+  justify-content: space-between;
+}
+
+.field {
+  margin-bottom: 1rem;
+}
+
+div.radioWrapper {
+  display: flex;
+
+  align-items: center;
+}
+
+div.radioWrapper label {
+  margin-left: 0.2rem;
+}
+
+div.resultContainer {
+  display: flex;
+  flex-direction: column;
+
+  gap: 1rem;
+}
+
+div.resultContainer .resultFinal {
+  width: fit-content;
+  width: 100%;
+  margin: 1rem auto;
+  border-radius: 0.5rem;
+  border: 2px solid rgba(200, 168, 252, 0.7);
+  text-align: center;
+  padding: 0.5rem;
+}
+
+p {
+  margin-bottom: 0.5rem;
+}
+
+table {
+  width: 100%;
+  margin: auto;
+}
+
+th {
+  padding-bottom: 0.5rem;
+}
+
+tr {
+  text-align: center;
+}
+
+/*
+@media screen and (max-width: 1000px) {
+    .fieldset {
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 620) {
+    .fieldset {
+        width: 50%;
+    }
+}*/
